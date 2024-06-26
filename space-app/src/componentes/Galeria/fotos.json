@@ -1,0 +1,16 @@
+[
+    {
+        "titulo": "Grande Nuvem de Magalhães",
+        "fonte": "Alura Space",
+        "path": "/imagens/galeria/foto-1.png",
+        "id": "1",
+        "tagId": 2
+    },
+    {
+        "titulo": "Via Láctea",
+        "fonte": "Alura Space",
+        "path": "/imagens/galeria/foto-2.png",
+        "id": "2",
+        "tagId": 2
+    }
+]
