@@ -45,7 +45,7 @@ const Button = styled.button`
     background: none;
     border: none;
 `;
-const Imagem = ({ foto, titulo, ativo = false, fonte, coracaoNaoPreenchido, imagemExpandir, expandida }) => {
+const Imagem = ({ foto, titulo, ativo = false, fonte, coracaoNaoPreenchido, imagemExpandir, expandida, aoZoomSolicitado }) => {
     return <>
         <Figure $expandida={expandida}>
             <img src={foto} alt="" />
@@ -54,7 +54,7 @@ const Imagem = ({ foto, titulo, ativo = false, fonte, coracaoNaoPreenchido, imag
                 <FooterContainer>
                     <p>{fonte}</p>
                     <ContainerButton>
-                        <Button><img src={ativo ? coracaoNaoPreenchido : "/icones/favorito-ativo.png"} alt="" /></Button>
+                        <Button onClick={() => aoZoomSolicitado(foto)}><img src={ativo ? coracaoNaoPreenchido : "/icones/favorito.png"} alt="" /></Button>
                         <Button><img src={imagemExpandir} alt="" /></Button>
                     </ContainerButton>
                 </FooterContainer>
